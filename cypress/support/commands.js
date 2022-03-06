@@ -71,10 +71,10 @@ Cypress.Commands.add('getAndSetToken', () => {
 
 
  Cypress.Commands.add('set', (A,B) => {
-    // Cypress.log({
-    //     message: 'Requests token and sets in local storage.',
-    //     displayName: 'GetToken'
-    // });
+    Cypress.log({
+        message: 'Requests token and sets in local storage.',
+        displayName: 'GetToken'
+    });
     cy.request({
         url: 'https://conduit.productionready.io/api/users/login',
         method: 'POST',

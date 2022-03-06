@@ -41,7 +41,7 @@ describe('verify button click ',()=>{
     it.only('To verify search box action and press inter key',()=>{
         cy.visit('https://www.ebay.com/n/all-categories#ebay-motors')
         cy.get('input[id="gh-ac"]').type('toys {enter}')
-        //cy.get('select[id="gh-cat"] option').type('toy {enter}')
+      
     })
 
 })

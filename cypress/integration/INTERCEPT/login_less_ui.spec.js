@@ -122,3 +122,27 @@ describe('verify the login functionality', () => {
 
 //     })
 // })
+
+
+
+
+// …or create a new repository on the command line
+// echo "# javascript" >> README.md
+// git init
+// git add README.md
+// git commit -m "first commit"
+//git branch -M main
+// git remote add origin https://github.com/shubhaml0099/javascript.git
+// git push -u origin main
+
+
+// …or push an existing repository from the command line
+// git remote add origin https://github.com/shubhaml0099/javascript.git
+// git branch -M main
+// git push -u origin maingit commit
+
+
+
+// git remote add origin https://github.com/shubhaml0099/cypress-.git
+// git branch -M main
+// git push -u origin main
