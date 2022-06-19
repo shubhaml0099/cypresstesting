@@ -24,7 +24,7 @@ describe('verify the auth2.0 api', () => {
         })
 
     })
-    it.only('verify api to get order',()=>{
+    it.only('verify api to get order',()=>{ 
         cy.request({
             method:"POST",
             url:"https://api-m.sandbox.paypal.com/v2/checkout/orders",

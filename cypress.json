@@ -1,5 +1,10 @@
 {
-        
-    "baseUrl":"http://zero.webappsecurity.com/"
+    "baseUrl":"https://www.irctc.co.in/nget/train-search",
+    "env":{
+        "name" : "shubham langote",
+        "contact":"9923547239",
+        "URL":"https://docs.cypress.io/guides/tooling/plugins-guide",
+        "yogi":"yelpale123"
+    }
 
 }

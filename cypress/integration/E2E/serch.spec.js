@@ -43,6 +43,7 @@ describe('verify the serch function ', () => {
     })
 
     it.only('validate the feedback form', () => {
+        cy.visit('/')
         cy.fixture("example").then((formData) => {
 
             for (let key in formData) {

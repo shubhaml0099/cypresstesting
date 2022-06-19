@@ -1,0 +1,27 @@
+
+
+
+
+// cypress ---->  test runner or command 
+// npx cypress open 
+// npx cypress run (default electron browser headless mode)
+// npx cypress run --headed 
+// npx cypress run --browser chrome 
+// npx cypress run --headed --browser chrome 
+
+/*---------------------------------------------------*/
+// cypress json ---> baseUrl:"https://www.facebook.com"
+
+
+
+//npx cypress run --config baseUrl="https://www.staging-website.com/"
+
+
+
+
+
+
+
+
+
+

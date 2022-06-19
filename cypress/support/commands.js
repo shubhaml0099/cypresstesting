@@ -24,10 +24,12 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
+import 'cypress-iframe';
 
 import 'cypress-file-upload';
 
 Cypress.Commands.add('login',(username,pasward)=>{
+    cy.visit('https://opensource-demo.orangehrmlive.com/')
     cy.get('input[id="txtUsername"]').type(username)
     cy.get('div[id="divPassword"]').type(pasward)
     cy.get('input[id="btnLogin"]').click()
@@ -48,6 +50,12 @@ Cypress.Commands.add('Hotel_login',(username,password)=>{
 
 })
 
+Cypress.Commands.add('Date_In_Out',(Date_In,Date_Out)=>{
+    cy.get('#datepick_in').clear().type(Date_In)
+    cy.get('#datepick_out').clear().type(Date_Out)
+    cy.get('#Submit').click()
+})
+
 Cypress.Commands.add('getAndSetToken', () => {
     Cypress.log({
         message: 'Requests token and sets in local storage.',
@@ -66,7 +74,7 @@ Cypress.Commands.add('getAndSetToken', () => {
         const token = response.body.user.token;
         localStorage.setItem('jwt', token);
     });
- })
+ } )
 
 
 

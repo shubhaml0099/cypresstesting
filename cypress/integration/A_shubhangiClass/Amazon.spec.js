@@ -1,0 +1,42 @@
+describe('validating flipcart site ',()=>{
+    it('validating flipcart site number of pages ',()=>{
+        cy.visit('https://www.flipkart.com/')
+        cy.get('._3704LK').type('mobile {enter}')
+        cy.get('select[class="_2YxCDZ"]').first().select('7000')
+        cy.get('select[class="_2YxCDZ"]').last().select('20000')
+        cy.get('[class="_4921Z t0pPfW"]').eq(3).click()
+        cy.get('[class="_10Ermr"]').should('have.text','Showing 1 – 24 of 407 results for "mobile "')
+        cy.get('[class="_1fQZEK"]').eq(6).invoke('removeAttr','target').click()
+       
+        cy.get('[class="_1_3w1N"]').click()
+        cy.get('[class="IiD88i _351hSN"]').first().type('9049128830')
+        cy.get('[class="IiD88i _351hSN"]').last().type('Y9@1994y')
+        cy.get('[class="_2KpZ6l _2HKlqd _3AWRsL"]').click()
+        cy.get('[class="_2KpZ6l _2U9uOA ihZ75k _3AWRsL"]').click()
+        cy.get('[class="_3iRXzi"]').last().click()
+
+    
+       // cy.get('#result-stats').should('have.text','About 1,15,00,00,000 results (0.46 seconds) ')
+    })
+    it.only('validating flipcart site number of pages ', () => {
+        cy.visit('https://www.flipkart.com/')
+        cy.get('._3704LK').type('mobile {enter}')
+        cy.get('select[class="_2YxCDZ"]').first().select('7000')
+        cy.get('select[class="_2YxCDZ"]').last().select('20000')
+        cy.get('[class="_4921Z t0pPfW"]').eq(3).click()
+        cy.get('[class="_10Ermr"]').should('have.text', 'Showing 1 – 24 of 407 results for "mobile "')
+        cy.get('[class="_1fQZEK"]').eq(6).invoke('removeAttr', 'target').click()
+        cy.get('[class="_2KpZ6l _2U9uOA ihZ75k _3AWRsL"]').click()
+        cy.get('[class="_1_3w1N"]').click()
+        cy.get('[class="IiD88i _351hSN"]').first().type('9049128830')
+        cy.get('[class="IiD88i _351hSN"]').last().type('Y9@1994y')
+        cy.get('[class="_2KpZ6l _2HKlqd _3AWRsL"]').click()
+        cy.wait(4000)
+        cy.get('[class="_1p3MFP dTTu2M"]>UL>LI').last().realClick()
+        cy.get('[class="_2KpZ6l RLM7ES _3AWRsL"]').click()
+        cy.get('[class="_2KpZ6l _1seccl _3AWRsL"]').click()
+        cy.get('[class="_2KpZ6l _1uR9yB _3dESVI"]').click()
+        //cy.get('[class="_1aULyb"]').eq(2).should('have.text','Delivery Address')
+
+    })
+})
