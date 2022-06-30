@@ -1,7 +1,7 @@
 
-let a = 10
+// let a = 10
 
-//var 
+// var 
 
 // var x = 10 
 // console.log(x)
@@ -11,7 +11,7 @@ let a = 10
 // console.log(x)
 
 
-// example 2
+// //example 2
 // var h ;
 // console.log(h)
 
@@ -19,7 +19,7 @@ let a = 10
 // var h
 
 
-// example
+// // example
 // console.log(x) // undefined
 // var x  //
 // x = 10
@@ -31,7 +31,7 @@ let a = 10
 // console.log(yy)
 
 
-//-----------------/
+// //-----------------/
 
 
 // var hhh = 10
@@ -68,12 +68,12 @@ let a = 10
 // var j = 10 
 // console.log(j) // 10
 
-
+//C:\Users\HP\Desktop\cypressTesting\cypress\integration\Hosting\VariabaleHosting.spec.js
 
 
 //let 
 
-// console.log(yy2)
+//console.log(yy2)
 // let  yy2 = 10
 // console.log(yy2)
 
@@ -130,7 +130,7 @@ let a = 10
 // }
 
 // var f = undefined
-// f(13,45)
+// //f(13,45)
 // f = (x,y)=>{
 //     console.log(x+y)
 // }
@@ -155,6 +155,30 @@ let a = 10
 
 // variable hosting 
 
-let x 
-x = 10
+// let x 
+// //x = 10
+// console.log(x)
+
+
+
+
+let x = 10;
+const y = 20;
+var z = 30;
+
+
+function add(){
+    // x = 11;
+// y = 21;
+ z = 31;
+// console.log(x)
+// console.log(y)
+console.log(z)
+
+}
+
+add()
+
 console.log(x)
+console.log(y)
+console.log(z)

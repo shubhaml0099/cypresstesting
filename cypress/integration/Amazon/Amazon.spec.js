@@ -12,7 +12,7 @@ describe('validating amazon login ',()=>{
         cy.get('[id="nav-tools"]>a').eq(2).click()
         cy.get('[type="email"]').clear().type('shubhamlangote0099@gmail.com')
         cy.get('input[id="continue"]').click()
-        cy.get('[type="password"]').clear().type('')
+        cy.get('[type="password"]').clear().type('   ')
         cy.get('#signInSubmit').click()
         cy.get('#nav-link-accountList-nav-line-1').should('have.text','Hello, shubhamlangote')
     })
