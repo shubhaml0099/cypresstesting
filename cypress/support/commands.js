@@ -103,3 +103,19 @@ Cypress.Commands.add('getAndSetToken', () => {
  });
 
 
+
+
+Cypress.Commands.add('Infor',(Fname,Lname,Emil,Age,salary,testing)=>{
+    cy.visit('https://demoqa.com/webtables')
+    cy.get('[id="addNewRecordButton"]').click()
+    cy.get('[id="firstName"]').type(Fname)
+        cy.get('[id="lastName"]').type(Lname)
+        cy.get('[id="userEmail"]').type(Emil)
+        cy.get('[id="age"]').type(Age)
+        cy.get('[id="salary"]').type(salary)
+        cy.get('[id="department"]').type(testing)
+        cy.get('[id="submit"]').click()
+    
+})
+
+
