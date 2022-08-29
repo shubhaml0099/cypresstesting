@@ -41,5 +41,5 @@ cy.title().should('have.text',expectedTitle)
 verifyTextContains(text){
     cy.contains(text)
 }
-}
+//}
  export default assertFunc
