@@ -1,24 +1,24 @@
 
 import {homepage} from '../../support/POMsupport'
 describe('varify the home page ',()=>{
-    let shub = new homepage()
+    //let shub = new homepage()
     beforeEach(()=>{
         cy.visit('https://opensource-demo.orangehrmlive.com/index.php/auth/login')
     })
 
     it('validate the login',()=>{
         
-        shub.ValidateLogin('Admin','admin123')
+        homepage.ValidateLogin('Admin','admin123')
         cy.url().should('include','index.php/dashboard')
     })
     it('validate logo',()=>{
-        shub.validatelogo()
+        homepage.validatelogo()
     })
     it('validate forgote paswar',()=>{
-        shub.ValidateForgotpasward()
+        homepage.ValidateForgotpasward()
     })
     it('validate social icon',()=>{
-        shub.ValidateSocialicon()
+        homepage.ValidateSocialicon()
     })
 
 })

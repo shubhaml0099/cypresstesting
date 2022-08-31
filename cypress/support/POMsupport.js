@@ -12,20 +12,20 @@ export class homepage{
     }
     // all elementwith css selector now we creat function 
 
-    ValidateLogin(username,pasward){
+   static ValidateLogin(username,pasward){
         cy.get(this.elements.Username).type(username)
         cy.get(this.elements.Password).type(pasward)
         cy.get(this.elements.Button).click()
 
     }
-    validatelogo(){
+   static validatelogo(){
         cy.get(this.elements.Logo).should('be.visible')
     }
-    ValidateForgotpasward(){
+   static ValidateForgotpasward(){
         cy.get(this.elements.forgotpasward).click()
         cy.url().should('include','auth/requestPasswordResetCode')
     }
-    ValidateSocialicon(){
+    static ValidateSocialicon(){
         cy.get(this.elements.socialicon).children().should('have.length','4')
     }
 
